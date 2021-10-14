@@ -41,3 +41,10 @@
     Which query would most likely display the correct results?
 
     `SELECT word FROM words WHERE word LIKE "&tion";
+
+- What's missing from this query to find all contacts without a phone number?
+
+    SELECT * FROM contacts WHERE phone ___________ NULL;
+
+    Answer: `IS`
+
