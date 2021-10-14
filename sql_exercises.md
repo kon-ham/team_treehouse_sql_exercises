@@ -30,3 +30,14 @@
 
     `SELECT <columns> FROM <table> WHERE <condition 1> OR <condition 2>;` 
 
+- Which keyword could you use to rewrite this query in a shorter form?
+
+    SELECT <columns> FROM <table> WHERE <column 1> = <value 1> OR <column 1> = <value 2> OR <column 1> = <value 3>;  
+
+    Answer: `IN`
+
+- You have a table full of words. You want to find all words ending with the `tion` at the end.
+
+    Which query would most likely display the correct results?
+
+    `SELECT word FROM words WHERE word LIKE "&tion";
