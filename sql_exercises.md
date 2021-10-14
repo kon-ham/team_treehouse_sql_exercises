@@ -51,3 +51,5 @@
 - I want to categorize products by price on a website. Cheap is defined by the prices from 0.01 and 9.99. Enter the missing keywords.
 
     `SELECT name, description FROM products WHERE price BETWEEN 0.01 AND 9.99;`
+
+To be continued...
