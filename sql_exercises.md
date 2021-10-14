@@ -19,3 +19,9 @@
 	Find all contacts in the  `phone_book`  where the phone number is missing so we can go and ask them for their 			number.
 
 		`SELECT * FROM phone_book WHERE phone IS NULL;`
+
+- We're still using the  `phone_book`, with the columns  `id`,  `first_name`,  `last_name`  and  `phone`.
+
+	Imagine we're implementing the autocomplete feature for a search facility on the phone where a user can start typing a last name and suggestions will appear. Write a query to retrieve all values from the last name column where the last name value is present. Only retrieve the  `last_name`  column.
+
+		`SELECT last_name FROM phone_book where last_name IS NOT NULL;`
