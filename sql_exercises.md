@@ -52,3 +52,8 @@
 
     `SELECT name, description FROM products WHERE price BETWEEN 0.01 AND 9.99;`
 
+- We have an eCommerce database and it has a products table. It has the columns id, name, description and price.
+
+    Add a new product to the products table. Use any valid values you want. All columns are required. The id column is auto incrementing.
+
+        `INSERT INTO products (id, name, description, price) VALUES (NULL, "Tee Hee", "Sour Candies", 4.99);`
