@@ -52,8 +52,3 @@
 
     `SELECT name, description FROM products WHERE price BETWEEN 0.01 AND 9.99;`
 
-To be continued...
-
-Making a test to verify I can `git push`
-
-And another test...
