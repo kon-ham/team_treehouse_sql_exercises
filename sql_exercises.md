@@ -115,3 +115,10 @@
     Update all contacts to have the first name of "Mystery" and last name of "Person".
 
         `UPDATE phone_book SET first_name = "Mystery", last_name = "Person";`
+
+- UPDATE shows SET title =  "Friends";
+
+    What's the missing operator?
+
+        `Answer: = `
+
