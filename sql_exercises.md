@@ -122,3 +122,8 @@
 
         `Answer: = `
 
+- Fill in the missing keywords for the following UPDATE statement.
+
+    ____ cars ____ model = "Ford" ____ id = 1;
+
+        `Answer: UPDATE, SET, WHERE`
