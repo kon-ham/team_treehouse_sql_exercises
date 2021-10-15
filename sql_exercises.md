@@ -66,3 +66,52 @@
 
         `INSERT INTO users (id, username, password, first_name, last_name) VALUES (NULL, "zzzxxx", "123abc", "Johnny", "Appleseed");`
 
+- Now we're using a database from a smartphone. It has a phone_book table. It has the columns id, first_name, last_name and phone.
+
+    Add a new contact to the phone_book table. Use any valid values you want. All columns are required. The id column is auto incrementing.
+
+        `INSERT INTO phone_book (id, first_name, last_name, phone) VALUES (NULL, "Johnny", "Appleseed", "123-123-1234");`
+
+- How many rows will this statement insert in to the cars table?
+
+    INSERT INTO cars (make, model) VALUES ("Fiat", "Fiat 500"),
+    ("Fiat", "Fiat Multipla"),
+    ("Cadillac", "Cadillac Fleetwood"),
+    ("Cadillac", "Cadillac Eldorado");
+
+        `Answer: 4`
+
+- What character should you replace the ? with to create a valid INSERT statement?
+
+    INSERT INTO awesome_people (first_name, last_name) VALUES ("Grace", "Hopper")? ("Ada", "Lovelace");
+
+        `Answer: ,`
+
+-  What does the acronym CRUD stand for?
+
+    `Create, Read, Update, Delete`
+
+- Given the database table imaged above, how would you complete this INSERT statement.
+
+
+    INSERT INTO countries (population, _____) VALUES (4596700, "New Zealand");
+
+        `Answer: name`
+
+- Fill in the missing keywords:
+
+    INSERT  tv_shows (show, network)  ("Super Girl", "CBS");
+
+        `Answer: INSERT INTO tv_shows (show, network) VALUES ("Super Girl", "CBS");`
+
+- We have an eCommerce database and it has a products table. It has the columns id, name, description and price.
+
+    The warehouse is closing down. There's a clearance sale and all products need to be priced 0.99.
+
+        `UPDATE products SET price = "0.99";`
+
+- Now we're using a database from a smartphone. It has a phone_book table. It has the columns id, first_name, last_name and phone.
+
+    Update all contacts to have the first name of "Mystery" and last name of "Person".
+
+        `UPDATE phone_book SET first_name = "Mystery", last_name = "Person";`
