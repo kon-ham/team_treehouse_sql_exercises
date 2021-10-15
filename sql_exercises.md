@@ -57,3 +57,12 @@
     Add a new product to the products table. Use any valid values you want. All columns are required. The id column is auto incrementing.
 
         `INSERT INTO products (id, name, description, price) VALUES (NULL, "Tee Hee", "Sour Candies", 4.99);`
+
+- The same eCommerce database has a users table. It has the columns id, username, password, first_name, and last_name.
+
+    Add a new user to the users table. Use any valid values you want. All columns are required. The id column is auto incrementing.
+
+    (Don't enter a real password you'd really use!)
+
+        `INSERT INTO users (id, username, password, first_name, last_name) VALUES (NULL, "zzzxxx", "123abc", "Johnny", "Appleseed");`
+
