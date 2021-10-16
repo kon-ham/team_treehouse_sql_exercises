@@ -127,3 +127,10 @@
     ____ cars ____ model = "Ford" ____ id = 1;
 
         `Answer: UPDATE, SET, WHERE`
+
+- We have an eCommerce database and it has a products table. It has the columns id, name, description and price.
+
+    Delete all products priced at 11 or higher!
+
+        `DELETE FROM products WHERE price >= 11;`
+
