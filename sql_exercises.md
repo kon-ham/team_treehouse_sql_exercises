@@ -151,3 +151,9 @@
     Select all columns.
 
         `SELECT * FROM phone_book ORDER BY last_name ASC, first_name ASC;`
+
+- In a library database there's a books table. There's a title, author, genre and first_published column.
+
+    Order the books by the most recently published books at the top. Select all columns.
+
+        `SELECT * FROM books ORDER BY first_published DESC;`
