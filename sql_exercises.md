@@ -139,3 +139,10 @@
     Delete the user with the username of poley_hands.
 
         `DELETE FROM users WHERE username = "poley_hands";`
+
+- Now we're using a database from a smartphone. It has a phone_book table. It has the columns id, first_name, last_name and phone.
+
+    Delete all contacts with the first name of Jonathan and last name of Luna.
+
+        `DELETE FROM phone_book WHERE first_name = "Jonathan" AND last_name = "Luna";`
+
