@@ -134,3 +134,8 @@
 
         `DELETE FROM products WHERE price >= 11;`
 
+- The same eCommerce database has a users table. It has the columns id, username, password, first_name, and last_name.
+
+    Delete the user with the username of poley_hands.
+
+        `DELETE FROM users WHERE username = "poley_hands";`
