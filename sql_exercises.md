@@ -157,3 +157,9 @@
     Order the books by the most recently published books at the top. Select all columns.
 
         `SELECT * FROM books ORDER BY first_published DESC;`
+
+- We're still using the library database there's a books table. There's a title, author, genre and first_published column.
+
+    Order all books by Genre and then by Title. Select all columns.
+
+        `SELECT * FROM books ORDER BY genre ASC, title ASC;`
