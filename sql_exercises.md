@@ -163,3 +163,23 @@
     Order all books by Genre and then by Title. Select all columns.
 
         `SELECT * FROM books ORDER BY genre ASC, title ASC;`
+
+- We're using the library database again. There's a books table. There's a title, author, genre and first_published column.
+
+    Write a query to obtain the first 5 books in the Fantasy genre ordered by the year released. Oldest first. Select all columns.
+
+        `SELECT * FROM books WHERE genre = "Fantasy" ORDER BY first_published ASC LIMIT 5;`
+
+- We're still using the library database with the books table. There's a title, author, genre and first_published column.
+
+    Find the earliest Science Fiction book in our library. Only one result should be returned. All columns should be selected.
+
+        `SELECT * FROM books WHERE genre = "Science Fiction" ORDER BY first_published ASC LIMIT 1;`
+
+- In a library database there's a books table. There's a title, author, genre and first_published column.
+
+    The library database is connected to a website displaying 10 books at a time, sorted by the title alphabetically.
+
+    Write a query to bring back the second page of results. Please retrieve all columns of information.
+
+        `SELECT * FROM books ORDER BY title ASC LIMIT 10 OFFSET 10;`
