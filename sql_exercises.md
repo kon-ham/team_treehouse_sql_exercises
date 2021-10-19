@@ -240,4 +240,8 @@
 
         `SELECT COUNT(*) AS jk_book_count FROM books WHERE author = "J.K. Rowling";`
 
-- 
+- In the library database there's a books table. There are id, title, author, genre and first_published columns.
+
+    Count all the books in each genre. Include the genre column first and the genre_count as the second column of information.
+
+        `SELECT genre, COUNT(*) AS genre_count FROM books GROUP BY genre;`
