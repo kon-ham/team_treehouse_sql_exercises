@@ -224,4 +224,11 @@
 
         `SELECT first_name || ' ' || UPPER(last_name) AS full_name, library_id FROM patrons;`
 
-- 
+- In the library database, how many books are in the genre of "Science Fiction"?
+
+    Alias the result as scifi_book_count.
+
+    The books table has the columns id, title, author, genre and first_published.
+
+        `SELECT COUNT(*) AS scifi_book_count FROM books WHERE genre = "Science Fiction";`
+
