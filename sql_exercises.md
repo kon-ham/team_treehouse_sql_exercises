@@ -189,3 +189,19 @@
     The phone has a technical limitation to show 20 contacts on a screen at a time. Write the SQL query to retrieve the 3rd page of results from the phone_book table. Contacts are ordered by last name and then first name.
 
         `SELECT * FROM phone_book ORDER BY last_name ASC, first_name ASC LIMIT 20 OFFSET 40;`
+
+- In the library database there's a patrons table listing all the users of the library. The columns are id, first_name, last_name, address, email, library_id and zip_code.
+
+    Generate a list of strings that are in the following format: Andrew Chalkley <andrew@teamtreehouse.com>. Concatenate the first name, last name and email address for all users.
+
+    Alias it to to_field. This will be used in the "To" field in email marketing.
+
+        `SELECT first_name || ' ' || last_name || ' ' || '<' || email || '>' AS to_field FROM patrons;`
+
+- In an ecommerce database there's a addresses table. There is an id, nickname, street, city, state, zip, country and user_id columns.
+
+    Concatenate the street, city, state, zip and country in the following format. street, city, state zip. country e.g. 34 NE 12 st, Portland, OR 97129. USA
+
+    Alias the concatenated string as address
+
+        `SELECT street || ', ' || city || ', ' || state || ' ' || zip || '. ' || country AS address FROM addresses;`
