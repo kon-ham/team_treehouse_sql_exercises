@@ -232,3 +232,12 @@
 
         `SELECT COUNT(*) AS scifi_book_count FROM books WHERE genre = "Science Fiction";`
 
+- In the library database, how many books are by the author of "J.K. Rowling"?
+
+    Alias the result as jk_book_count.
+
+    The books table has the columns id, title, author, genre and first_published.
+
+        `SELECT COUNT(*) AS jk_book_count FROM books WHERE author = "J.K. Rowling";`
+
+- 
