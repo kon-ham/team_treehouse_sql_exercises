@@ -295,4 +295,3 @@
     Write a query that returns the title first and the month and year it was released alias as month_year_released. Dates should look like "04/1983" for April 1983.
 
         `SELECT title, STRFTIME("%m/%Y", date_released) AS month_year_released FROM movies;`
-
