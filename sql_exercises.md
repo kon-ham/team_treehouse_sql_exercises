@@ -275,3 +275,9 @@
     The price is in USD. Write a query that returns the product name and price in Pounds Sterling (GBP). The current exchange rate is 1.4 USD to every 1 GBP. Alias the calculated price to price_gbp. Round to two decimal places.
 
         `SELECT name, ROUND(price / 1.4, 2) AS price_gbp FROM products;`
+
+- In an ecommerce database there's an orders table with the columns id, product_id, user_id, address_id, ordered_on, status and cost.
+
+    Count the total number of orders that were ordered today and have the status of 'shipped'. Alias it to shipped_today.
+
+        `SELECT COUNT(*) AS shipped_today FROM orders WHERE status = 'shipped' AND ordered_on = DATE("now");`
