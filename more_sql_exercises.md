@@ -33,3 +33,6 @@
 
 - Which relationship type is the most common in a relational database?
     `One to Many`
+
+- What do we do to handle a Many to Many relationship between tables during the design process?
+    `Add a third table between the original tables`
