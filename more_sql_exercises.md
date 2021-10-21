@@ -18,3 +18,6 @@
 
 - Which of the following is NOT something a database key can do?
     `Guarantee a table does not return data when queried unless a specific password is supplied`
+
+- What are Foreign Keys?
+    `They are columns that contain data which relate to the Primary Key in another table`
