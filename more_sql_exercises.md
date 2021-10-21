@@ -21,3 +21,7 @@
 
 - What are Foreign Keys?
     `They are columns that contain data which relate to the Primary Key in another table`
+
+- Once a Foreign Key Constraint is created to enforce the referential integrity between two tables, what happens if you try to insert a value that does NOT exist in the primary key table?
+    `It will NOT insert the data, and will return an error`
+
