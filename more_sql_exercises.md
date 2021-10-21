@@ -85,3 +85,12 @@
         INNER JOIN SalesRep ON Sale.SalesRepID = SalesRep.SalesRepID;
         ```
 
+- In a car database there is a Model table with columns, ModelID, MakeID and ModelName and a Car table with columns, CarID, ModelID, VIN, ModelYear and StickerPrice.
+
+    Show all Model names from the Model table along with VIN from the Car table. Make sure models that aren’t in the Car table still show in the results!
+
+        ```
+        SELECT ModelName, VIN
+        FROM Model
+        LEFT OUTER JOIN Car ON Model.ModelID = Car.ModelID;
+        ```
