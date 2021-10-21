@@ -94,3 +94,13 @@
         FROM Model
         LEFT OUTER JOIN Car ON Model.ModelID = Car.ModelID;
         ```
+
+- In a car database there is a Sale table with columns, SaleID, CarID, CustomerID, LocationID, SalesRepID, SaleAmount and SaleDate. The database also has a SalesRep table with columns, SalesRepID, FirstName, LastName, SSN, PhoneNumber, StreetAddress, City, State and ZipCode.
+
+    Show all SaleDate, SaleAmount, and SalesRep First and Last name from Sale and SalesRep. Make sure that all Sales appear in results even if there is no SalesRep associated to the sale.
+
+        ```
+        SELECT SaleDate, SaleAmount, FirstName, LastName
+        FROM Sale
+        LEFT OUTER JOIN SalesRep ON Sale.SalesRepID = SalesRep.SalesRepID;
+        ```
