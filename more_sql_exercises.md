@@ -39,3 +39,6 @@
 
 - Where does the INNER JOIN clause go in a SQL statement?
     `After FROM clause but before WHERE clause`
+
+- What is the most common type of JOIN?
+    `INNER JOIN`
