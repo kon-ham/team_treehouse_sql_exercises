@@ -13,3 +13,8 @@
 - What data type does a primary key have to be?
     `Either, (Integer or Text) as long as the value guarantees uniqueness`
 
+- What happens when a Unique Constraint is violated in a database system?
+    `The database does not allow the data to be written to the table and an error is returned`
+
+- Which of the following is NOT something a database key can do?
+    `Guarantee a table does not return data when queried unless a specific password is supplied`
