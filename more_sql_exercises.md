@@ -64,3 +64,14 @@
         FROM Model
         INNER JOIN Car ON Model.ModelID = Car.ModelID;
         ```
+
+- In a car database there is a Make table with columns, MakeID and MakeName, a Model table with columns, ModelID, MakeID and ModelName and a Car table with columns, CarID, ModelID, VIN, ModelYear and StickerPrice.
+
+    For all cars in the database, show Make Name, Model Name, VIN and Sticker Price from the Model and Car tables in one result set.
+
+        ```
+        SELECT MakeName, ModelName, VIN, StickerPrice
+        FROM Make
+        INNER JOIN Model ON Make.MakeID = Model.MakeID
+        INNER JOIN Car on Model.ModelID = Car.ModelID;
+        ```
