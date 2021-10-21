@@ -55,3 +55,12 @@
     FROM TableA
     INNER JOIN TableB ON TableA.ColumnID = TableB.ColumnID
     ```
+- In a car database there is a Model table with columns, ModelID, MakeID and ModelName and a Car table with columns, CarID, ModelID, VIN, ModelYear and StickerPrice.
+
+    For all cars in the database, show Model Name, VIN and Sticker Price in one result set.
+
+        ```
+        SELECT ModelName, VIN, StickerPrice
+        FROM Model
+        INNER JOIN Car ON Model.ModelID = Car.ModelID;
+        ```
