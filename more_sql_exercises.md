@@ -36,3 +36,6 @@
 
 - What do we do to handle a Many to Many relationship between tables during the design process?
     `Add a third table between the original tables`
+
+- Where does the INNER JOIN clause go in a SQL statement?
+    `After FROM clause but before WHERE clause`
