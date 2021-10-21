@@ -25,3 +25,5 @@
 - Once a Foreign Key Constraint is created to enforce the referential integrity between two tables, what happens if you try to insert a value that does NOT exist in the primary key table?
     `It will NOT insert the data, and will return an error`
 
+- The thing that defines the physical relationship between two tables in a database is called:
+    `Foreign Key Constraint`
