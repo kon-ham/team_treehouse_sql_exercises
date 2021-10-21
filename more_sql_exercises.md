@@ -27,3 +27,9 @@
 
 - The thing that defines the physical relationship between two tables in a database is called:
     `Foreign Key Constraint`
+
+- If NO Foreign Key Constraint exists between two tables, it is possible to accidentally record data in a foreign key column that does not have a matching value in the primary key table.
+    `True`
+
+- Which relationship type is the most common in a relational database?
+    `One to Many`
