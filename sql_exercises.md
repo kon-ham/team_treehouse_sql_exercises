@@ -226,10 +226,6 @@
 
 - In the library database, how many books are in the genre of "Science Fiction"?
 
----
-
-
-
     Alias the result as scifi_book_count.
 
     The books table has the columns id, title, author, genre and first_published.
