@@ -45,3 +45,6 @@
 
 - What is a JOIN?
     `It is how a SQL query combines data from two tables into one result set`
+
+- A left outer join returns all data from the first -- or left -- table and only the data with matches in the second table.
+    `True`
