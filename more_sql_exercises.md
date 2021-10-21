@@ -48,3 +48,10 @@
 
 - A left outer join returns all data from the first -- or left -- table and only the data with matches in the second table.
     `True`
+
+- Which is the valid SQL statement with JOIN
+    ```
+    SELECT *
+    FROM TableA
+    INNER JOIN TableB ON TableA.ColumnID = TableB.ColumnID
+    ```
