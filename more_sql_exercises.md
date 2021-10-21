@@ -42,3 +42,6 @@
 
 - What is the most common type of JOIN?
     `INNER JOIN`
+
+- What is a JOIN?
+    `It is how a SQL query combines data from two tables into one result set`
