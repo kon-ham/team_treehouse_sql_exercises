@@ -75,3 +75,13 @@
         INNER JOIN Model ON Make.MakeID = Model.MakeID
         INNER JOIN Car on Model.ModelID = Car.ModelID;
         ```
+- In a car database there is a Sale table with columns, SaleID, CarID, CustomerID, LocationID, SalesRepID, SaleAmount and SaleDate. The database also has a SalesRep table with columns, SalesRepID, FirstName, LastName, SSN, PhoneNumber, StreetAddress, City, State and ZipCode.
+
+    Show the First and Last Name of each sales rep along with SaleAmount from both the SalesRep and Sale tables in one result set.
+
+        ```
+        SELECT FirstName, LastName, SaleAmount
+        FROM Sale
+        INNER JOIN SalesRep ON Sale.SalesRepID = SalesRep.SalesRepID;
+        ```
+
