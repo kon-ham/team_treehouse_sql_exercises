@@ -224,4 +224,74 @@
 
         `SELECT first_name || ' ' || UPPER(last_name) AS full_name, library_id FROM patrons;`
 
-- 
+- In the library database, how many books are in the genre of "Science Fiction"?
+
+    Alias the result as scifi_book_count.
+
+    The books table has the columns id, title, author, genre and first_published.
+
+        `SELECT COUNT(*) AS scifi_book_count FROM books WHERE genre = "Science Fiction";`
+
+- In the library database, how many books are by the author of "J.K. Rowling"?
+
+    Alias the result as jk_book_count.
+
+    The books table has the columns id, title, author, genre and first_published.
+
+        `SELECT COUNT(*) AS jk_book_count FROM books WHERE author = "J.K. Rowling";`
+
+- In the library database there's a books table. There are id, title, author, genre and first_published columns.
+
+    Count all the books in each genre. Include the genre column first and the genre_count as the second column of information.
+
+        `SELECT genre, COUNT(*) AS genre_count FROM books GROUP BY genre;`
+
+- In the library database there's a books table. There are id, title, author, genre and first_published columns.
+
+    Write a query to count all the unique genres in the books table. Alias it as total_genres.
+
+        `SELECT COUNT(DISTINCT genre) AS total_genres FROM books;`
+
+- We're in a movie database. There's a reviews table with the columns of id, movie_id, username, review and rating.
+
+    The movie "Starman" has the id of 6. Movie ids are found in the movie_id column in the reviews table. Write a query that totals up all ratings for the movie "Starman" in the reviews table. Alias it as starman_total_ratings.
+
+        `SELECT SUM(rating) AS starman_total_ratings FROM reviews WHERE movie_id = 6;`
+
+- We're in a movie database. There's a reviews table with the columns of id, movie_id, username, review and rating.
+
+    The movie "Starman" has an id of 6. Movie ids are stored in the movie_id column. Calculate the average rating for "Starman". Alias the average as average_rating.
+
+        `SELECT AVG(rating) AS average_rating FROM reviews WHERE movie_id = 6;`
+
+- We're in a movie database. There's a reviews table with the columns of id, movie_id, username, review and rating.
+
+    The movie "Starman" has an id of 6. Movie ids are stored in the movie_id column. Calculate the minimum and maximum ratings for "Starman". Alias them as star_min and star_max.
+
+        `SELECT MIN(rating) AS star_min, MAX(rating) AS star_max FROM reviews WHERE movie_id = 6;`
+
+- In an ecommerce database we have a products table with the columns id, name, category, description, price and stock_count.
+
+    The price is in USD. Write a query that returns the product name and price in Pounds Sterling (GBP). The current exchange rate is 1.4 USD to every 1 GBP. Alias the calculated price to price_gbp. Round to two decimal places.
+
+        `SELECT name, ROUND(price / 1.4, 2) AS price_gbp FROM products;`
+
+- In an ecommerce database there's an orders table with the columns id, product_id, user_id, address_id, ordered_on, status and cost.
+
+    Count the total number of orders that were ordered today and have the status of 'shipped'. Alias it to shipped_today.
+
+        `SELECT COUNT(*) AS shipped_today FROM orders WHERE status = 'shipped' AND ordered_on = DATE("now");`
+
+- In an ecommerce database there's an orders table with the columns id, product_id, user_id, address_id, ordered_on, status and cost.
+
+    Count the total number of orders that were ordered yesterday and have the status of 'shipped'. Alias it to ordered_yesterday_and_shipped.
+
+        `SELECT COUNT(*) AS ordered_yesterday_and_shipped FROM orders
+        WHERE ordered_on = DATE("now", "-1 days")
+        AND status = 'shipped';`
+
+- In a movies database we have a movies table. It has the columns of id, title, date_released and genre.
+
+    Write a query that returns the title first and the month and year it was released alias as month_year_released. Dates should look like "04/1983" for April 1983.
+
+        `SELECT title, STRFTIME("%m/%Y", date_released) AS month_year_released FROM movies;`
