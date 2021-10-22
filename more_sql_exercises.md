@@ -164,3 +164,14 @@
         SELECT Name FROM Vegetable
         ORDER BY Name;
         ```
+
+- There are two tables Fruit and Vegetable table. The Fruit table has a FruitID and a Name column and the Vegetable table has a VegetableID and Name column.
+
+    Create an alphabetical list of vegetables that are NOT considered a fruit.
+
+        ```
+        SELECT Name From Vegetable
+        EXCEPT 
+        SELECT Name FROM Fruit
+        ORDER BY Name;
+        ```
