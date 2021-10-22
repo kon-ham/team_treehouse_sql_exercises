@@ -111,3 +111,5 @@
 - Which Set Operation is used to return only the results that are NOT in another table?
     `Except operator`
 
+- It is valid to have fewer columns in the query that comes after the UNION operation.
+    `False. (They must be equal)`
