@@ -108,3 +108,6 @@
 - Which Operator eliminates duplicates while combining multiple data sets into one result set?
     `Union operator`
 
+- Which Set Operation is used to return only the results that are NOT in another table?
+    `Except operator`
+
