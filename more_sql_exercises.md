@@ -131,3 +131,15 @@
         SELECT Name FROM Vegetable
             WHERE Name < "L";
         ```
+
+- There are two tables Fruit and Vegetable table. The Fruit table has a FruitID and a Name column and the Vegetable table has a VegetableID and Name column.
+
+    Create a list of fruits and vegetables that includes any potential duplicate values. Ensure that it is in alphabetical order so that the duplicates are next to each other!
+
+        ```
+        SELECT Name FROM Fruit
+        UNION ALL
+        SELECT Name FROM Vegetable
+        ORDER BY Name;
+        ```
+
