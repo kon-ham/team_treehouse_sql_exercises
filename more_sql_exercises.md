@@ -104,3 +104,7 @@
         FROM Sale
         LEFT OUTER JOIN SalesRep ON Sale.SalesRepID = SalesRep.SalesRepID;
         ```
+
+- Which Operator eliminates duplicates while combining multiple data sets into one result set?
+    `Union operator`
+
