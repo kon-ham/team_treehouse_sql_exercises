@@ -238,4 +238,14 @@
         );
         ```
 
-- 
+- In a car database there is a Sale table with columns, SaleID, CarID, CustomerID, LocationID, SalesRepID, SaleAmount and SaleDate and a Customer table with columns, CustomerID, FirstName, LastName, Gender and SSN.
+
+    Use a subquery as a derived table to show all sales to female ('F') customers. Select all columns from the Sale table only.
+
+        ```
+        SELECT * 
+        FROM Sale AS s
+        INNER JOIN
+        (SELECT CustomerID From Customer WHERE Gender = 'F') AS c
+        ON s.CustomerID = c.CustomerID;
+        ```
