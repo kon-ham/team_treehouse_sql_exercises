@@ -187,3 +187,8 @@
 - When using IN with a subquery, you can only select ONE column in the Subquery.
 
     `TRUE`
+
+- When creating derived / temporary tables, your subquery belongs in which section of the query:
+
+    `FROM`
+
