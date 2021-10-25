@@ -179,3 +179,7 @@
 - Why must a derived table be aliased?
 
     `Because a derived table is temporary, it must be aliased because it has no name. Because it has no name, the database wouldn't be able to reference its data set.`
+
+- When using a subquery to filter your outer query, you use what SQL keyword?
+
+    `IN`
