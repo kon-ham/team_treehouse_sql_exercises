@@ -192,3 +192,6 @@
 
     `FROM`
 
+- When using a subquery to create a derived table, you can only select ONE column in the Subquery.
+
+    `FALSE`
