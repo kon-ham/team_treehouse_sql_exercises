@@ -195,3 +195,18 @@
 - When using a subquery to create a derived table, you can only select ONE column in the Subquery.
 
     `FALSE`
+
+- In a car database there is a Model table with columns, ModelID, MakeID and ModelName and a Car table with columns, CarID, ModelID, VIN, ModelYear and StickerPrice.
+
+    Use a subquery along with IN to list all the Model Names with a Sticker Price greater than $30000
+
+        ```
+        SELECT ModelName 
+        FROM Model 
+        WHERE ModelID IN (
+            SELECT ModelID 
+            FROM Car 
+            WHERE StickerPrice > 30000
+        );
+        ```
+
