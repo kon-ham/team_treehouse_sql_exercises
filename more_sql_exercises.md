@@ -210,3 +210,16 @@
         );
         ```
 
+- In a car database there is a Sale table with columns, SaleID, CarID, CustomerID, LocationID, SalesRepID, SaleAmount and SaleDate and a Car table with columns, CarID, ModelID, VIN, ModelYear and StickerPrice.
+
+    Use a subquery along with IN to list all sales of cars with Sticker Price greater than $30000. Include all columns.
+
+        ```
+        SELECT *
+        FROM Sale
+        WHERE CarID IN (
+            SELECT CarID
+            FROM Car
+            WHERE StickerPrice > 30000
+        );
+        ```
