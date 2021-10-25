@@ -183,3 +183,7 @@
 - When using a subquery to filter your outer query, you use what SQL keyword?
 
     `IN`
+
+- When using IN with a subquery, you can only select ONE column in the Subquery.
+
+    `TRUE`
