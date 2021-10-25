@@ -223,3 +223,19 @@
             WHERE StickerPrice > 30000
         );
         ```
+
+- In a car database there is a Sale table with columns, SaleID, CarID, CustomerID, LocationID, SalesRepID, SaleAmount and SaleDate and a Customer table with columns, CustomerID, FirstName, LastName, Gender and SSN.
+
+    Use a subquery along with IN to list all sales to female customers. (Gender = 'F') Select all columns.
+
+        ```
+        SELECT * 
+        FROM Sale 
+        WHERE CustomerID IN (
+            SELECT CustomerID
+            FROM Customer
+            WHERE Gender = 'F'
+        );
+        ```
+
+- 
